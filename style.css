@@ -1,0 +1,884 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;800&family=Stylish&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.navb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.navb a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.navb h1{
+    font-size: 3.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 1rem 4.5rem;
+}
+.nav-links a{
+    margin-right: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: 300ms;
+
+}
+.nav-links a:hover{
+    background: darkgreen;
+    padding: 0.25rem;
+    border-radius: 5px; 
+}
+#showMenu{
+    
+}
+.main{
+    display: flex;
+    height: 100vh;
+    width: 95%;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+h1{
+    font-size:3rem;
+    font-weight: 900;
+    margin-bottom: 12px;
+    color: aliceblue;
+}
+
+p{
+    font-size: 1rem;
+    color: aliceblue;
+}
+
+.btn{
+    background: #4a6186;
+    color: aliceblue;
+    padding: 0.45rem 1.4rem;
+    font-size: 1.2rem;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 1.2rem;
+    cursor: pointer;
+    transition: all 300ms ease;
+    outline: none;
+}
+.btn:hover{
+    background: darkgreen;
+    transform: scale(.96);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    height: 380px;
+    background-color: transparent;
+    border: 2px solid gray;
+    border-radius: 8px;
+    color: aliceblue;
+}
+h3{
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+input{
+    width: 95%;
+    padding: 0.8rem;
+    margin: 0.5rem;
+    font-size: 18px;
+    outline: none;
+    border-radius: 5px;
+    border: 0;
+    color: #595857;
+}
+
+input::placeholder{
+    color: #c9c7c5;
+    font-size: 1rem;
+}
+.btn{
+    background: #4a6186;
+    color: aliceblue;
+    padding: 0.45rem 1.4rem;
+    font-size: 1.2rem;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    
+}
+.courses{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.courses h1{
+    color: black;
+}
+.courses p{
+    color: #6767e7;
+    font-size: 14px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    
+}
+.course-col{
+    flex-basis: 31%;
+    background: #EDDDE0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: all 400ms ease;
+    cursor: pointer;
+}
+.course-col:hover{
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .4);
+    transform: scale(.97);
+    background: #E8CAD0;
+}
+.course-col h3{
+    font-size: 1rem;
+}
+.course-col .btn{
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+/*testimonials*/
+.testimonials{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+    
+}
+.testimonials h3{
+    font-size: 1rem;
+    color: darkgreen;
+}
+.testimonials h2{
+    font-size: 2.5rem;
+    color: #6767e7;
+}
+.testimonial-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    
+}
+
+.testimonial-row p{
+    color: #6767e7;
+    margin-top: .9rem;
+}
+.testmonial-col{
+    flex-basis: 29%;
+    background: #BCE0E0;
+    text-align: start;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: all 400ms ease;
+    cursor: pointer;
+    padding: 1.5rem;
+    transition: all 400ms ease;
+}
+.testmonial-col:hover{
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .4);
+    transform: scale(1.2);
+}
+.img-title{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.img-title img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.img-title h2{
+    font-size: 1.1rem;
+    color: black;
+    margin-left: 1rem;
+    margin-top: 4rem;
+    text-align: center;
+    font-weight: 400;
+
+}
+/*programs*/
+.programs{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 80px;
+    
+}
+.programs h1{
+    color: black;
+}
+.programs p{
+    color: #6767e7;
+    padding-top: 1.3rem;
+}
+.programs-row{
+    display: flex;
+    flex-direction: column;
+    
+}
+.programs-col{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    padding-top: 40px;
+}
+
+.programs-col img{
+    width: 50%;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    
+    text-align: start;
+}
+.text h3{
+    font-size: 1.9rem;
+    font-weight: 400;
+}
+.icon-text{
+    display: flex;
+    flex-direction: row;
+     
+}
+.fa-graduation-cap, 
+.fa-building-columns{
+    background: #6767e7;
+    margin: 1.1rem 2rem 0 0 ;
+    padding: 10px;
+    border-radius: 50%;
+}
+/****teachers****/
+.teachers{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+}
+.teachers h1{
+    color: black;
+}
+.teachers p{
+    color: #6767e7;
+    padding-top: 1.3rem;
+}
+.teachers-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.teachers-col{
+    flex-basis: 30%;
+    background-color: #fff;
+    border: 1px solid #eeeceb;
+    padding: 1rem 0 1rem 0;
+    width: auto;
+    line-height: 1.8rem;
+}
+.teachers-col img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 1px solid #6767e7;
+}
+.teachers-col h4{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.teachers-col h5{
+    font-size: 1.2rem;
+    font-weight: 100;
+    padding-top: .8rem;
+}
+.quote{
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/book-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-quote{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+.img-quote img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #6767e7;
+}
+.img-quote h5{
+    margin: 1rem 0;
+    color: aliceblue;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+span{
+    padding: 0 1rem;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 400;
+}
+.services{
+    padding-block: 80px;
+    width: 80%;
+    margin: auto;
+    text-align: center;  
+}
+.online-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    
+}
+.online-col{
+    flex-basis: 30%;
+    text-align: start;
+    
+}
+.online-col i{
+    font-size: 5rem;
+    color: orange;
+    margin-block: 2rem;
+}
+.online-col h2{
+    font-weight: 400;
+}
+.online-col p{
+    color: #6767e7;
+
+}
+.footer{
+    background: #6767e7;
+    margin-top: 80px;
+}
+.footer-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 80px;
+}
+.footer-col{
+    flex-basis: 22%;
+}
+
+.footer-col p{
+    color: #c5c7c9;
+    line-height: 1.9rem;
+}
+.footer-col h3{
+    font-size: 1.2rem;
+    color: white;
+}
+.footer-col ul{
+    list-style: none;
+}
+.footer-col a{
+    text-decoration: none;
+    color: #c5c7c9;
+    line-height: 2.3rem;
+    transition: all 500ms ease;
+}
+.footer-col a:hover{
+    color: darkgreen;
+}
+
+.footer-col i{
+    color: orange;
+    font-size: 1.8rem;
+}
+.footer-col span{
+    font-size: .9rem;
+    line-height: 4.8rem;
+    color: #c5c7c9;
+}
+hr{
+    width: 80%;
+    margin: auto;
+    border: 1px solid #c5c7c9;
+}
+.copyright-socialM{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1.5rem;
+    
+}
+.copyright p{
+    color: #c5c7c9;
+}
+.copyright i{
+    color: red;
+}
+.copyright a{
+    color: darkgreen;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 300ms;
+}
+.copyright a:hover{
+    color: orange;
+}
+.media-icons a{
+    display: inline-flex;
+    text-decoration: none;
+    color: orange;
+    margin-right: 10px;
+    font-size: 1.5rem;
+    transition: all 500ms;
+}
+.media-icons a:hover{
+    color: darkgreen;
+    transform: rotateY(180deg);
+}
+
+
+/********sub-pages******/
+
+.sub-header{
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/front-view.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sub-main{
+   text-align: center;
+   padding-top: 25vh; 
+}
+
+
+/*********location*******/
+.location{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+}
+.location iframe{
+    width: 100%;
+}
+
+/********contact********/
+
+.contact{
+   width: 80%;
+   margin: auto;
+   padding-top: 80px;
+    
+}
+
+.contact-row{
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+}
+
+
+.contact-col{
+    flex-basis: 48%;
+}
+.contact-col div{
+    display: flex;
+    margin-bottom: 7rem;
+}
+
+.contact-col div i{
+    color: orange;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contact-col div h5{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.contact-col div p{
+    color: #595857;
+    font-size: 0.8rem;
+}
+
+
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.nav-links i{
+    display: none;
+}
+.navb .fa-bars{
+    color: aliceblue;
+    display: none;
+}
+
+
+/*********media-query********/
+
+
+@media (min-width:543px) and (max-width :824px){
+   
+
+    .nav-links{
+        position: fixed;
+        background-color: #4a6186;
+        width: 220px;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        transition: 500ms;
+
+        
+    }
+    .nav-links i{
+        display: inline;
+        color: orange;
+        font-size: 2.3rem;
+        font-weight: 800;
+        padding: 10px;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .nav-links a{
+       font-size: 1.5rem;
+       margin-left: 3rem;
+       padding-top: 3rem;  
+    }
+
+    .navb .fa-bars{
+        display: inline;
+        font-size: 2.5rem;
+        color: aliceblue;
+        padding-right: 2rem;
+    }
+    .navb h1 {
+        font-size: 2.5rem;
+    }
+
+    .main{
+        margin: auto;
+    }
+
+    .testimonials {
+        width: 95%; 
+    }
+
+    
+
+    .quote p{
+        padding-inline: 15px;
+        text-align: center;
+    }
+
+    .footer-row{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 2rem;
+        
+    }
+
+    .copyright-socialM{
+        display: block;
+        width: 90%;
+    }
+
+    .media-icons a{
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width: 542px){
+    .body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: fixed;
+        background-color: #4a6186;
+        width: 220px;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        transition: 500ms;   
+    }
+
+    .nav-links i{
+        display: inline;
+        color: orange;
+        font-size: 2rem;
+        font-weight: 800;
+        padding: 10px;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .nav-links a{
+       font-size: 1rem;
+       margin-left: 3rem;
+       padding-top: 3rem;
+       
+    }
+
+    .navb .fa-bars{
+        display: inline;
+        font-size: 2rem;
+        color: aliceblue;
+        padding-right: 1rem;
+        align-items: center;
+        padding-top: 0;
+    }
+
+    .navb h1 {
+        font-size: 2rem;
+        padding-inline: 1rem;
+    }
+
+    .main {
+        display: block;
+        justify-content: space-between;
+        margin: auto;
+        width: 100%;
+        text-align: start;
+        padding-inline: 2rem;
+        padding-top: 5rem;
+    }
+
+
+    h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+    }
+
+    p {
+        font-size: 1.1rem;
+        
+    }
+    .btn {
+        padding: 0 .5rem;
+        font-size: 1rem;
+    }
+
+    .form {
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+        height: 310px;
+        align-self: center;
+        
+    }
+    h3 {
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+
+
+    input{
+        padding: 0.5rem;  
+    }
+
+    .btn{
+        padding: 0 .5rem;
+        font-size: 1rem;
+    
+    }
+/******courses******/
+
+    .row {
+        display: block;
+    }
+    .course-col{
+        padding: 1rem 1rem 0 1rem;
+        margin-top: 1rem;
+    }
+
+   
+    .course-col h3 {
+        font-size: 1.5rem;
+    }
+    .courses p {
+        font-size: 1.2rem;
+    }
+
+
+/******testimonials******/
+
+
+    .testimonials h2 {
+        font-size: 1.5rem;
+    }
+
+    .testimonial-row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit);
+        gap: 1rem; 
+    }
+
+    .img-title {
+        display: inline-flex;
+    }
+
+    .img-title h2 {
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+
+    .testimonial-row p {
+        font-size: 1.2rem;
+    }
+
+    
+/*******programs******/
+
+
+    .programs p {
+        font-size: 1.1rem;
+    }
+
+    .programs-row {
+        display: grid;
+    }
+
+    .programs-col {
+        display: grid; 
+    }
+
+    .programs-col img {
+        width: 100%;
+    }
+
+    .fa-graduation-cap, 
+    .fa-building-columns{
+        padding: 5px;
+    }
+
+
+/******teachers******/
+
+    .teachers p {
+        font-size: 1.1rem;
+    }
+
+    .teachers-row {
+       display: grid;
+       gap: 1rem;  
+    }
+
+    /******quote******/
+    .quote p{
+        padding-inline: 15px;
+        text-align: center;
+    }
+    .quote h1{
+        font-size: 1.5rem;
+    }
+
+/******services******/
+
+    .online-row {
+        display: grid;
+        
+    }
+
+    .online-col i {
+        font-size: 2.5rem;
+        margin-block: 0;
+    }
+
+
+    .online-col p {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+
+/*******contact******/
+
+    .contact-row {
+        display: block;
+    }
+
+
+/******footer******/
+
+    .footer-row{
+        display: grid;
+        grid-template-columns: repeat(auto-fit);
+        grid-gap: 1rem;
+        text-align: center;
+    }
+
+    .footer-col p {
+        font-size: 1.1rem;
+    }
+
+    .copyright-socialM{
+        display: block;
+        width: 90%;
+    }
+
+    .media-icons a{
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
