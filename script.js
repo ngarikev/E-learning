@@ -3,7 +3,7 @@ const closeBtnEl = document.getElementById('close-btn')
 const navLinkEl = document.querySelector(".nav-links")
 
 
-
+//sidebar for phodes and tablets
 openBtnEl.addEventListener("click", showMenu);
 
 function showMenu(){
