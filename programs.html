@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripion" content="Join our online courses to learn new skills and advance your career. Expert instructors and flexible learning at your fingertips.">
     <title>Programs page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
@@ -12,10 +13,10 @@
     <!----------------Header---------------->
     <header class="sub-header">
         <nav class="navb">
-            <a href="index.html"><h1>OneEdu</h1></a>
+            <a href="/"><h1>OneEdu</h1></a>
             <div class="nav-links">
                 <i class="fa-solid fa-xmark" id="close-btn"></i>
-                <a href="index.html">Home</a>
+                <a href="/">Home</a>
                 <a href="courses.html">Courses</a>
                 <a href="programs.html">Programs</a>
                 <a href="teachers.html">Teachers</a>
@@ -31,12 +32,12 @@
     </header>
     <!-----------------Program section--------------->
     
-    <section class="programs">
+    <section class="programs" id="programs">
         <h1>Our Programs</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam repellat aut <br> neque! Doloribus sunt non aut reiciendis, vel recusandae obcaecati hic dicta <br> repudiandae in quas quibusdam ullam, illum sed veniam!</p>
         <div class="programs-row">
             <div class="programs-col">
-                <img src="images/excell.jpg" >
+                <img src="images/excell.jpg" alt="program-image" loading="lazy">
                 <div class="text">
                     <h3>We Are Excellent In Education</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem maxime nam porro possimus fugiat quo molestiae illo.</p>
@@ -63,10 +64,10 @@
                         <p>150 Universities Worldwide</p>
                     </div>
                 </div>
-                <img src="images/strive.jpg">
+                <img src="images/strive.jpg" alt="program-image" loading="lazy">
             </div>
             <div class="programs-col">
-                <img src="images/std.png">
+                <img src="images/std.png" alt="program-image" loading="lazy">
                 <div class="text">
                     <h3>Education is life</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem maxime nam porro possimus fugiat quo molestiae illo.</p>
@@ -86,7 +87,7 @@
     
 
      <!----------------Footer---------------->
-     <section class="footer">
+     <section class="footer" id="footer">
         <div class="footer-row">
             <div class="footer-col">
                 <h1>OneEdu</h1>
@@ -96,22 +97,22 @@
             <div class="footer-col">
                 <h3>Menu</h3>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Courses</a></li>
-                    <li><a href="#">Programs</a></li>
-                    <li><a href="#">Teachers</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="teachers.html">Teachers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>   
             </div>
             <div class="footer-col">
                 <h3>Useful Links</h3>
                 <ul>
-                    <li><a href="#">Testimonials
+                    <li><a href="#testimonials">Testimonials
                     </a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Community</a></li>
-                    <li><a href="#">Campus Pictures</a></li>
-                    <li><a href="#">Tuitions</a></li>
+                    <li><a href="#fqa">FAQ</a></li>
+                    <li><a href="#community">Community</a></li>
+                    <li><a href="#cumpus">Campus Pictures</a></li>
+                    <li><a href="#tuition">Tuitions</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -124,13 +125,13 @@
         <hr>
         <div class="copyright-socialM">
             <div class="copyright">
-                <p> Copyright ©2023 All rights reserved | This template is made with <i class="fa-solid fa-heart"></i> by <a href="#">Kevin Ngari.</a></p>
+                <p> Copyright &copy;<span id="current-year">0</span> All rights reserved | This template is made with <i class="fa-solid fa-heart"></i> by <a href="#">Kevin Ngari.</a></p>
             </div>
             <div class="media-icons">
-                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com" target="_blank"aria-label="Follow us on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com" target="_blank" aria-label="Follow us on Linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.twitter.com" target="_blank" aria-label="Follow us on Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.github.com" target="_blank" aria-label="Follow us on Github"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
 
@@ -139,4 +140,15 @@
      <script src="script.js"></script>
     
 </body>
+<script defer>
+    document.addEventListener("DOMContentLoaded", function() {
+        const currentYearEl = document.getElementById("current-year");
+
+        function showCurrentYear() {
+            currentYearEl.textContent = new Date().getFullYear();
+        }
+
+        showCurrentYear();
+    });
+</script>
 </html>
